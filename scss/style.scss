@@ -1,0 +1,15 @@
+//In this scss you put everything you need to
+//change if its not in de _files
+
+// npm run complie:sass
+
+@use 'custom'; //puts all bootstrap imported in style.scss in style.css
+
+//IMPORT COMPONENTS
+@use 'components/buttons';
+@use 'components/media_queries';
+@use 'components/navbar';
+@use 'components/typography';
+
+//IMPORT PAGES
+@use 'pages/coffe';

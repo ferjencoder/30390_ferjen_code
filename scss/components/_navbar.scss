@@ -1,0 +1,75 @@
+@use '../custom' as *;
+
+/* NAVBAR */
+
+nav {
+  // box-shadow: $coffee-shdw-3;
+  a {
+    text-decoration: none;
+    letter-spacing: $coffee-fs-spacing-sm;
+  }
+  li {
+    list-style: none;
+  }
+  .navbar-toggler {
+    color: white;
+    border-color: transparent;
+  }
+}
+
+.tabIcons {
+  color: $coffee-clr-3;
+  :hover {
+    color: tomato;
+  }
+  :focus {
+    color: $coffee-clr-2;
+  }
+}
+.active {
+  .tabIcons {
+    color: $coffee-clr-6;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -0.3em;
+      padding: auto;
+      width: 102%;
+      height: 3px;
+      background-color: $coffee-clr-6;
+    }
+    &:hover {
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+}
+.navProductos {
+  font-size: 0.8rem;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    padding: auto;
+    width: 100%;
+    height: 1px;
+    background-color: $coffee-clr-7;
+    transform: scaleX(0);
+    transform-origin: 50%;
+    transition: transform 250ms ease-in;
+  }
+  &:hover {
+    &::after {
+      transform: scaleX(1);
+    }
+  }
+}
+.navProductos-wrap {
+  border-top: 1px solid $gray-500;
+  border-bottom: 1px solid $gray-500;
+  color: black;
+}
