@@ -2,97 +2,118 @@
 
 body {
   font-family: $coffee-ff-primary;
+  transition: $coffee-transit-2;
+  scroll-behavior: smooth;
 }
-
-/* START HERO COFFEE */
-
-.showcase {
-  font-family: $coffee-ff-primary;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  max-height: 100vh;
-  padding: 5em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: $coffee-clr-white;
-  transition: 0.5s;
-  z-index: 2;
-}
-
-.text {
-  font-family: $coffee-ff-primary;
+.video-container {
+  height: 50vh;
   position: relative;
-  z-index: 10;
-  h2 {
-    font-size: 3em;
-    font-weight: 800;
-    color: $coffee-clr-white;
-    line-height: 1em;
-    text-transform: uppercase;
+  overflow: hidden;
+  @media (min-width: 100px) {
+    height: 100vh;
   }
-  h3 {
-    font-size: 2em;
-    font-weight: 700;
-    color: $coffee-clr-5;
-    line-height: 1.2em;
-    text-transform: uppercase;
-  }
-  button {
-    display: inline-block;
-    font-size: 1em;
-    background: transparent;
-    padding: 10px 30px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 500;
-    margin-top: 10px;
-    color: $coffee-clr-white;
-    letter-spacing: 2px;
-    transition: 0.2s;
-    border: 1px solid transparent;
-  }
-  a:hover {
-    background: transparent;
-    color: $coffee-clr-white;
-    border: 1px solid $coffee-clr-white;
-  }
+}
 
-  i {
-    font-size: 1.2em;
-    color: $coffee-clr-white;
-    margin: 20px 0;
-    font-weight: 300;
-    max-width: 700px;
-    letter-spacing: 0.025em;
+video {
+  object-fit: cover; // Set the magic
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/*** A E S T H E T I C S ***/
+/***************************/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #333;
+  color: white;
+}
+
+.video-container:after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(black, 0.2);
+  z-index: 1;
+}
+.text {
+  h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 0 0 1rem;
+    padding: 0;
+    line-height: 1;
+    font-size: 5vw;
+    @media (max-width: 400px) {
+      font-size: 2.5rem;
+    }
+    @media (min-width: 401px) {
+      font-size: 3rem;
+      margin-top: 3rem;
+    }
+    @media (min-width: 1200px) {
+      font-size: 3rem;
+    }
+  }
+  p {
+    font-size: 1rem;
+    letter-spacing: $coffee-fs-spacing-sm;
+    @media (max-width: 400px) {
+      font-size: 1rem;
+    }
+    @media (min-width: 401px) {
+      font-size: 1.2rem;
+      letter-spacing: $coffee-fs-spacing-sm;
+    }
+    @media (min-width: 1200px) {
+      font-size: 1.3rem;
+      letter-spacing: $coffee-fs-spacing-lg;
+    }
   }
 }
 .txt {
-  font-size: 1.2rem;
-  line-height: 1.5em;
-  letter-spacing: $coffee-fs-spacing-sm;
   i {
     color: gold;
   }
 }
-.btnDesafio {
-  border: 2px solid white;
+
+.callout {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 10rem;
+  height: 80%;
+  text-align: center;
+  z-index: 10;
 }
+
 .social {
-  position: absolute;
+  /*   position: absolute; */
   z-index: 10;
   bottom: 1.5em;
   display: flex;
   justify-content: center;
   align-items: center;
+
   li {
     list-style: none;
   }
   li a {
     display: inline-block;
-    margin-right: 20px;
     color: $coffee-clr-white;
     transform: scale(0.5);
     transition: $coffee-transit-2;
@@ -101,79 +122,4 @@ body {
   li a:hover {
     transform: scale(0.5) translateY(-15px);
   }
-}
-
-section {
-  video {
-    object-fit: cover;
-  }
-}
-
-@media (max-width: 1300px) {
-  .showcase {
-    /* padding: 40px;
-    height: 100vh; */
-
-    video {
-      /*     background: url('../assets/vid/coffee.mp4'); */
-      object-fit: cover;
-      background-size: 80%;
-      min-height: 100%;
-    }
-  }
-  .text h2 {
-    font-size: 3em;
-  }
-  .text h3 {
-    font-size: 2em;
-  }
-}
-/* END HERO COFFEE */
-
-/* _COFEE.SCSS - VIDEO SETTINGS*/
-
-// .box {
-//   position: relative;
-//   justify-content: center;
-//   min-height: 100vh;
-//   color: #fff;
-//   text-align: center;
-// }
-// .box video {
-//   position: absolute;
-//   left: 0;
-//   top: 0;
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-//   z-index: -1;
-// }
-// // /* _COFEE.SCSS - MEDIA QUERIES */
-
-// @media (max-width: 800px) {
-//   .box {
-//     min-height: 600px;
-//   }
-//   .box h1 {
-//     font-size: 32px;
-//   }
-//   .box h3 {
-//     font-size: 20px;
-//   }
-//   .box a.boxBtn {
-//     padding: 15px 40px;
-//   }
-// }
-
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #fff;
-  padding: 35px 100px 0;
 }

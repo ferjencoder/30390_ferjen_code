@@ -48,8 +48,17 @@ document.querySelector('.btnSiguiente').addEventListener('click', function () {
   let passGen = '';
 
   for (let i = 0; i <= inputLength; i++) {
-    // let randomNumber = Math.trunc(Math.random() * 9) + 1;
-    passGen += passChars.charAt(Math.floor(Math.random() * passChars.length));
+    if (!inputLength && !inputLength.value) {
+      // cancel btn
+    } else {
+      passGen += passChars.charAt(Math.floor(Math.random() * passChars.length));
+    }
+    alert(`La contraseña creada es: ${passGen}`);
   }
-  alert(`La contraseña creada es: ${passGen}`);
 });
+
+/* YEAR */
+const yearEl = document.querySelector('.year');
+const currentYear = new Date().getFullYear();
+console.log(currentYear);
+yearEl.textContent = currentYear;

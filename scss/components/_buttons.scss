@@ -1,6 +1,17 @@
-@use "../custom" as *;
+@use '../custom' as *;
 
 .btn {
   border-radius: 0;
   box-shadow: none;
+  border: 1px solid transparent;
+  box-shadow: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: $coffee-ff-secondary;
+  font-weight: 500;
+  letter-spacing: $coffee-fs-spacing-sm;
+  &:hover {
+    color: white;
+    border: 1px solid white;
+  }
 }
