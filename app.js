@@ -53,8 +53,8 @@ document.querySelector('.btnSiguiente').addEventListener('click', function () {
     } else {
       passGen += passChars.charAt(Math.floor(Math.random() * passChars.length));
     }
-    alert(`La contraseña creada es: ${passGen}`);
   }
+  alert(`La contraseña creada es: ${passGen}`);
 });
 
 /* YEAR */
