@@ -11146,95 +11146,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.btn {
-  border-radius: 0;
-  box-shadow: none;
-  border: 1px solid transparent;
-  box-shadow: none;
-  color: white;
-  text-transform: uppercase;
-  font-family: Segoe UI, sans-serif;
-  font-weight: 500;
-  letter-spacing: 0.02rem;
-}
-.btn:hover {
-  color: white;
-  border: 1px solid white;
-}
-
-/* MEDIA QUERIES */
-@media (min-width: 992px) {
-  #intro {
-    margin-top: -58.59px;
-  }
-}
-/* NAVBAR */
-nav a {
-  text-decoration: none;
-  letter-spacing: 0.02rem;
-}
-nav li {
-  list-style: none;
-}
-nav .navbar-toggler {
-  color: white;
-  border-color: transparent;
-}
-
-.tabIcons {
-  color: rgb(169, 132, 103);
-}
-.tabIcons :hover {
-  color: tomato;
-}
-.tabIcons :focus {
-  color: rgb(115, 61, 55);
-}
-
-.active .tabIcons {
-  color: rgb(240, 234, 210);
-  position: relative;
-}
-.active .tabIcons::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -0.3em;
-  padding: auto;
-  width: 102%;
-  height: 3px;
-  background-color: rgb(240, 234, 210);
-}
-.active .tabIcons:hover::after {
-  transform: scaleX(1);
-}
-
-.navProductos {
-  font-size: 0.8rem;
-  position: relative;
-}
-.navProductos::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  padding: auto;
-  width: 100%;
-  height: 1px;
-  background-color: rgb(232, 211, 115);
-  transform: scaleX(0);
-  transform-origin: 50%;
-  transition: transform 250ms ease-in;
-}
-.navProductos:hover::after {
-  transform: scaleX(1);
-}
-
-.navProductos-wrap {
-  border-top: 1px solid #adb5bd;
-  border-bottom: 1px solid #adb5bd;
-  color: black;
-}
-
 body {
   font-family: "Poppins", sans-serif;
   transition: all 0.3s ease;
@@ -11253,6 +11164,26 @@ body {
 }
 
 video {
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.img-container {
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 100px) {
+  .img-container {
+    height: 100vh;
+  }
+}
+
+.bg-img-position {
   object-fit: cover;
   position: absolute;
   height: 100%;
@@ -11368,6 +11299,26 @@ body {
 }
 .social li a:hover {
   transform: scale(0.5) translateY(-15px);
+}
+
+.img-container {
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 100px) {
+  .img-container {
+    height: 100vh;
+  }
+}
+
+.bg-img-position {
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

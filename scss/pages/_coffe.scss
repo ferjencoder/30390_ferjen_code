@@ -22,6 +22,23 @@ video {
   top: 0;
   left: 0;
 }
+.img-container {
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  @media (min-width: 100px) {
+    height: 100vh;
+  }
+}
+
+.bg-img-position {
+  object-fit: cover; // Set the magic
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
 
 /*** A E S T H E T I C S ***/
 /***************************/

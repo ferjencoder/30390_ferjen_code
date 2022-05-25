@@ -4255,10 +4255,3 @@ node_modules/yargs-parser/build/lib/string-utils.js
 node_modules/yargs-parser/build/lib/tokenize-arg-string.js
 node_modules/yargs-parser/build/lib/yargs-parser-types.js
 node_modules/yargs-parser/build/lib/yargs-parser.js
-pasos.txt
-theme/theming_coffee.html
-scss/_palette_coffee.scss
-theme/theme_coffee.html
-index_copy.html
-.gitignore
-Lessons.md
