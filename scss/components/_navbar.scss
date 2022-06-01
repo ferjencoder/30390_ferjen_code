@@ -1,12 +1,14 @@
 @use '../custom' as *;
+@use '../components/colors' as *;
+@use '../components/typography' as *;
 
-/* NAVBAR */
+// NAVBAR
 
 nav {
-  // box-shadow: $coffee-shdw-3;
+  // box-shadow: $planet-shdw-3;
   a {
     text-decoration: none;
-    letter-spacing: $coffee-fs-spacing-sm;
+    letter-spacing: $planet-fs-spacing-sm;
   }
   li {
     list-style: none;
@@ -18,17 +20,18 @@ nav {
 }
 
 .tabIcons {
-  color: $coffee-clr-3;
-  :hover {
-    color: tomato;
+  color: rgba(255, 255, 255, 0.7);
+
+  &:hover {
+    color: white;
   }
-  :focus {
-    color: $coffee-clr-2;
+  &:focus {
+    color: $planet-clr-3;
   }
 }
 .active {
   .tabIcons {
-    color: $coffee-clr-6;
+    color: $planet-clr-2;
     position: relative;
     &::after {
       content: '';
@@ -38,7 +41,7 @@ nav {
       padding: auto;
       width: 102%;
       height: 3px;
-      background-color: $coffee-clr-6;
+      background-color: $planet-clr-2;
     }
     &:hover {
       &::after {
@@ -57,7 +60,8 @@ nav {
     padding: auto;
     width: 100%;
     height: 1px;
-    background-color: $coffee-clr-7;
+    //background-color: $planet-clr-7;
+    background-color: transparent;
     transform: scaleX(0);
     transform-origin: 50%;
     transition: transform 250ms ease-in;
@@ -73,3 +77,27 @@ nav {
   border-bottom: 1px solid $gray-500;
   color: black;
 }
+
+.color-glass {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 0;
+  border: 1px solid transparent;
+  &:active {
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+}
+
+.bg-item-glass {
+  @extend .color-glass;
+  color: black;
+}
+
+// $list-group-border-radius: 0;
+// $list-group-bg: #{bg-item-glass};
+// $list-group-hover-bg: $planet-clr-1;
+// $list-group-active-color: rgba(255, 255, 255, 0.6);
+// $list-group-active-bg: #{bg-item-glass};

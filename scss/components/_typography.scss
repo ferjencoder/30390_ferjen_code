@@ -1,1 +1,19 @@
 @use '../custom' as *;
+
+// FONTS COFFEE
+// $coffee-ff-primary: 'Poppins', sans-serif;
+// $coffee-ff-secondary: Segoe UI, sans-serif;
+// $coffee-ff-serif: 'Playfair Display', serif;
+
+// FONTS PLANET
+$planet-ff-primary: 'Barlow', sans-serif;
+$planet-ff-secondary: Segoe UI, sans-serif;
+$planet-ff-serif: 'Bellefair', serif;
+
+/* OVERRIDES FONTS */
+$font-family-sans-serif: $planet-ff-primary;
+$font-family-monospace: $planet-ff-secondary;
+
+/* LETTER SPACING */
+$planet-fs-spacing-lg: 0.05rem;
+$planet-fs-spacing-sm: 0.02rem;

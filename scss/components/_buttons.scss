@@ -1,17 +1,41 @@
 @use '../custom' as *;
+@use '../components/colors' as *;
+@use '../components/typography' as *;
 
-.btn {
+// .btn {
+//   border-radius: 0;
+//   box-shadow: none;
+//   border: 1px solid transparent;
+//   box-shadow: none;
+//   color: white;
+//   text-transform: uppercase;
+//   font-family: $planet-ff-secondary;
+//   font-weight: 500;
+//   letter-spacing: $planet-fs-spacing-sm;
+//   &:hover {
+//     color: white;
+//     border: 1px solid white;
+//   }
+// }
+.btn-actions {
   border-radius: 0;
   box-shadow: none;
   border: 1px solid transparent;
+  background-color: transparent;
+  padding: 0.4rem 1rem;
   box-shadow: none;
   color: white;
   text-transform: uppercase;
-  font-family: $coffee-ff-secondary;
-  font-weight: 500;
-  letter-spacing: $coffee-fs-spacing-sm;
+  font-family: $planet-ff-secondary;
+  font-weight: 400;
+  letter-spacing: $planet-fs-spacing-sm;
   &:hover {
-    color: white;
-    border: 1px solid white;
+    color: $planet-clr-2;
+    border: 1px solid $planet-clr-2;
   }
+}
+
+.btn-desafio-planet {
+  @extend .btn-actions;
+  border: 1px solid white;
 }

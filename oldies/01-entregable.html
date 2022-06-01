@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../assets/ico/zanahoria.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Simulador de propinas || Desafío Entregable #1</title>
+  </head>
+  <body class="bg-primary">
+    <header>
+      <nav class="navbar navbar-dark bg-transparent fixed-top px-5 mx-3">
+        <div class="container-fluid py-5">
+          <a class="navbar-brand text-secondary" href="#">
+            <h3 class="d-none d-sm-flex fw-bold text-light">30390 - JAVASCRIPT</h3>
+          </a>
+          <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header bg-dark text-success">
+              <h3 class="offcanvas-title" id="offcanvasNavbarLabel">30390 - JAVASCRIPT</h3>
+              <button type="button" class="btn-close text-light text-reset shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body bg-dark">
+              <h5 class="pb-2 text-success">CODER HOUSE</h5>
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                    <i class="tabIcons fa-solid fa-bars-progress fa-2xl p-3"></i>
+                  </button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                    <i class="tabIcons fa-solid fa-address-card fa-2xl p-3"></i>
+                  </button>
+                  <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                    <i class="tabIcons fa-solid fa-comment fa-2xl p-3"></i>
+                  </button>
+                </div>
+              </ul>
+
+              <div class="tab-content bg-dark" id="nav-tabContent">
+                <div class="tab-pane pt-4 fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <h6 class="px-1">PROYECTOS</h6>
+                  <p class="px-1">en construcción...</p>
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action mb-2">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Desafío entregable #1</h5>
+                        <small class="text-muted">220524</small>
+                      </div>
+                      <p class="mb-1">Crear simulador</p>
+                      <small class="text-muted"> En este caso, he reformulado un simulador de propinas.</small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1 txt">Desafío complementario #1</h5>
+                        <small>220515</small>
+                      </div>
+                      <p class="mb-1 txt">Loops for y while</p>
+                      <small>Crear un algoritmo que repita un bloque de instrucciones.</small>
+                    </a>
+
+                    <!-- <a href="#" class="list-group-item list-group-item-action">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small class="text-muted">3 days ago</small>
+                      </div>
+                      <p class="mb-1">Some placeholder content in a paragraph.</p>
+                      <small class="text-muted">And some muted small print.</small>
+                    </a> -->
+                  </div>
+                </div>
+                <div class="tab-pane pt-4 fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                  <h6 class="px-1">PERFIL</h6>
+                  <p class="px-1">en construcción...</p>
+                </div>
+                <div class="tab-pane pt-4 fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                  <h6 class="px-1">CONTACTO</h6>
+                  <p class="px-1">en construcción...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--<<<< START SECTION HERO -->
+
+    <section class="img-container">
+      <div class="card-img-overlay"></div>
+      <img class="bg-img-position" src="../assets/img/tips.jpg" alt="" />
+      <div class="cover-container showcase col-12 col-sm-9 col-md-10 col-lg-8 callout text-start ps-1">
+        <div class="container m-5 p-4 bg-transparent"></div>
+        <div class="text py-5 my-5">
+          <h2 class="mt-5 text-uppercase text-light">Aprendiendo javascript</h2>
+          <h3 class="my-4 text-uppercase text-light">En Coder House</h3>
+          <p class="txt mt-5 d-inline-flex align-items-center">
+            <i class="fa-brands fa-js fa-xl fa-bounce m-0" style="--fa-animation-iteration-count: 3"></i>
+            <strong class="d-sm-flex text-uppercase text-light fw-bold ps-2">ejemplos-consigna:</strong>
+          </p>
+
+          <p class="d-sm-flex text-white m-0"><small>1. Calcular costo total de productos y/o servicios seleccionados por el usuario.</small></p>
+          <p class="d-sm-flex text-white m-0"><small>2. Calcular pagos en cuotas sobre un monto determinado.</small></p>
+          <p class="d-sm-flex text-white m-0"><small>3. Calcular valor final de un producto seleccionado en función de impuestos y descuentos.</small></p>
+          <p class="d-sm-flex text-white m-0"><small>4. Calcular tiempo de espera promedio en relación a la cantidad de turnos registrados.</small></p>
+          <p class="d-sm-flex text-white m-0"><small>5. Calcular edad promedio de personas registradas.</small></p>
+          <p class="d-sm-flex text-white m-0"><small>6. Calcular nota final de alumnos ingresados.</small></p>
+
+          <button class="btn shadow-none text-light text-uppercase btnAnterior my-5" href="./01-complementario.html">Anterior</button>
+          <button class="btn shadow-none btnDesafio text-uppercase bg-warning text-dark border-0 my-5" href="#">Desafío</button>
+          <button class="btn shadow-none text-light text-uppercase btnSiguiente my-5" href="#">Otro</button>
+          <div class="text py-5 my-5">
+            <ul class="social d-inline-flex p-0">
+              <li>
+                <a href="https://github.com/ferjencoder/ferjencoder" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="https://ferjencoder.github.io/30390_ferjen_code/"><i class="fa-solid fa-globe"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--<<<< END SECTION HERO -->
+    <footer class="row containerFooterMsg m-0 p-0">
+      <p class="m-0 p-1 text-center text-light">
+        <small
+          >Desafío Entregable #1 || <span class="year">1</span> Jacascript || ferJen <a href="https://github.com/ferjencoder"><ins> ferJen</ins></a></small
+        >
+      </p>
+    </footer>
+    <!--<< SCRIPTS -->
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+    <script src="../app.js"></script>
+    <script src="../clase-07-high-order-functions.js"></script>
+  </body>
+</html>

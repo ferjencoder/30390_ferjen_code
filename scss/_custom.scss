@@ -1,62 +1,24 @@
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
-
-// /* FONTS */
-// $coffee-ff-primary: 'Poppins', sans-serif;
-// $coffee-ff-secondary: 'Noto Sans', sans-serif;
-// $coffee-ff-serif: 'Noto Serif Display', serif;
-// $coffee-ff-logo: 'al-fresco', sans-serif;
-
-// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 // @import url('https://use.typekit.net/kal6lby.css');
 
-/* FONTS */
+// $planet-clr-bg:
 
-$coffee-ff-primary: 'Poppins', sans-serif;
-$coffee-ff-secondary: Segoe UI, sans-serif;
-$coffee-ff-serif: 'Playfair Display', serif;
-// $coffee-ff-primary: adobe-garamond-pro, sans-serif;
-// $coffee-ff-secondary: 'Noto Sans', sans-serif;
-// $coffee-ff-serif: adobe-garamond-pro, Georgia, serif;
-// $coffee-ff-logo: al-fresco, sans-serif;
+$planet-clr-1: #d0d6f9;
+$planet-clr-2: rgb(229, 248, 118);
+$planet-clr-3: rgb(255, 215, 0);
+$planet-clr-white: #ffffff;
+$planet-clr-black: #0b0d17;
 
-/* OVERRIDES FONTS */
-$font-family-sans-serif: $coffee-ff-primary;
-$font-family-monospace: $coffee-ff-secondary;
+$primary: $planet-clr-1;
+$secondary: $planet-clr-white;
+// $success: $planet-clr-4;
+$info: $planet-clr-2;
+$warning: $planet-clr-3;
+// $danger: $planet-clr-2;
+// $light: $planet-clr-6;
+// $dark: $gray-900;
 
-/* LETTER SPACING */
-$coffee-fs-spacing-lg: 0.05rem;
-$coffee-fs-spacing-sm: 0.02rem;
-
-/* MY COLORS */
-$coffee-clr-1: rgba(108, 88, 76, 1); //umber
-$coffee-clr-2: rgba(115, 61, 55, 1); // Bole
-$coffee-clr-3: rgba(169, 132, 103, 1); //cafe-au-lait
-$coffee-clr-4: rgba(173, 193, 120, 1); // olivine
-$coffee-clr-5: rgba(221, 229, 182, 1); // pale-spring-bud
-$coffee-clr-6: rgba(240, 234, 210, 1); // eggshell
-$coffee-clr-7: rgba(232, 211, 115, 1); // arylide-yellow
-$coffee-clr-white: #fff; // eggshell
-$coffee-clr-black: #222; // eggshell
-
-/* COFFEE THEME COLORS */
-$blue: #0d6efd;
-$indigo: #6610f2;
-$purple-dark: rgba(72, 50, 65, 1);
-$purple-light: rgba(121, 85, 105, 1);
-$pink: rgba(166, 128, 140, 1);
-$red: #dc3545;
-$orange: #fd7e14;
-$yellow: #ffc107;
-$green: #198754;
-$teal: #20c997;
-$cyan: #0dcaf0;
-
-/* WHITE & GRAY COLORS VARIABLES */
 $black: #000;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
@@ -69,44 +31,39 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $white: #fff;
 
-/* BOOT THEME COLOR VARIABLES */
-$primary: $coffee-clr-1;
-$secondary: $coffee-clr-3;
-$success: $coffee-clr-4;
-$info: $coffee-clr-5;
-$warning: $coffee-clr-7;
-$danger: $coffee-clr-2;
-$light: $coffee-clr-6;
-$dark: $gray-900;
+// FONTS PLANET
+$planet-ff-primary: 'Barlow', sans-serif;
+$planet-ff-secondary: Segoe UI, sans-serif;
+$planet-ff-serif: 'Bellefair', serif;
 
-/* SHADOWS */
+/* OVERRIDES FONTS */
+$font-family-sans-serif: $planet-ff-primary;
+$font-family-monospace: $planet-ff-secondary;
+
+// SHADOWS
 $coffee-shdw-1: 0 5px 15px rgba(0, 0, 0, 0.2);
 $coffee-shdw-2: 0 5px 15px rgba(0, 0, 0, 0.1);
 $coffee-shdw-3: 0 5px 10px rgba(0, 0, 0, 0.05);
 
-/* TRANSITIONS */
-$coffee-transit-1: all 0.5s ease;
-$coffee-transit-2: all 0.3s ease;
-
-/* GRID OVERRIDES */
+// GRID OVERRIDES
 $grid-gutter-width: 0rem;
 
-/* ACCORDION OVERRIDES */
-$accordion-icon-color: $primary;
+// ACCORDION OVERRIDES
+$accordion-icon-color: $planet-clr-1;
 $accordion-icon-active-color: $secondary;
 $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/></svg>");
 $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/></svg>");
 
-/* OVERRIDES NAVBAR FONT COLOR */
+// OVERRIDES NAVBAR FONT COLOR
 $body-color: black;
 $navbar-light-color: black;
-$navbar-light-hover-color: $coffee-clr-2;
-$navbar-light-active-color: $coffee-clr-1;
-$navbar-light-disabled-color: $gray-400;
+$navbar-light-hover-color: $planet-clr-white;
+$navbar-light-active-color: $planet-clr-1;
+$navbar-light-disabled-color: #ced4da;
 /* $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") ; */
 $navbar-light-toggler-border-color: transparent;
 
-/* OVERRIDES NAVBAR */
+// OVERRIDES NAVBAR
 $navbar-dark-color: white;
 $navbar-dark-hover-color: white;
 $navbar-dark-active-color: white;
@@ -115,25 +72,35 @@ $navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.
 $navbar-dark-toggler-border-color: transparent;
 $btn-close-color: white;
 
-/* OVERRIDES TABS */
-$nav-tabs-border-color: $gray-200;
+// OVERRIDES TABS
+$nav-tabs-border-color: #ced4da;
 $nav-tabs-border-radius: 0;
 $nav-tabs-link-hover-border-color: none;
 $nav-tabs-link-active-bg: transparent;
 $nav-tabs-link-active-border-color: none;
 
-// $nav-pills-border-radius: $border-radius;
-// $nav-pills-link-active-color: $component-active-color;
-// $nav-pills-link-active-bg: $component-active-bg;
-
-/* OVERRIDES LISTS */
+// OVERRIDES LISTS
+$list-group-color: $gray-900;
+$list-group-bg: $white;
+$list-group-border-color: transparent;
+$list-group-border-width: 1px;
 $list-group-border-radius: 0;
-$list-group-bg: white;
-$list-group-hover-bg: $coffee-clr-3;
-$list-group-active-color: $coffee-clr-black;
-$list-group-active-bg: $coffee-clr-6;
 
-/* OVERRIDES FORMS */
+$list-group-hover-bg: $gray-100;
+$list-group-active-color: black;
+$list-group-active-bg: white;
+$list-group-active-border-color: transparent;
+
+$list-group-disabled-color: black;
+$list-group-disabled-bg: #{bg-item-glass};
+
+$list-group-action-color: black;
+$list-group-action-hover-color: black;
+
+$list-group-action-active-color: $black;
+$list-group-action-active-bg: $gray-200;
+
+// OVERRIDES FORMS
 .form-control {
   border: 0;
   /*   border-bottom: 1px solid $coffee-clr-2; */

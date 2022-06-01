@@ -4,29 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="./assets/ico/coffee.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/ico/globe.png" sizes="32x32" type="image/x-icon" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Simulador de propinas || Desafío Entregable #1</title>
+    <title>Producuctador || Desafío Complementario #2</title>
   </head>
-  <body class="bg-primary">
+  <body>
     <header>
       <nav class="navbar navbar-dark bg-transparent fixed-top px-5 mx-3">
         <div class="container-fluid py-5">
           <a class="navbar-brand text-secondary" href="#">
-            <h3 class="d-none d-sm-flex fw-bold text-black">30390 - JAVASCRIPT</h3>
+            <h3 class="d-none d-sm-flex fw-bold text-white">30390 - JAVASCRIPT</h3>
           </a>
           <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header bg-dark text-success">
-              <h3 class="offcanvas-title" id="offcanvasNavbarLabel">30390 - JAVASCRIPT</h3>
-              <button type="button" class="btn-close text-light text-reset shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <div class="offcanvas offcanvas-end bg-transparent border-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header bg-transparent text-success">
+              <h3 class="offcanvas-title text-secondary" id="offcanvasNavbarLabel">30390 - JAVASCRIPT</h3>
+              <button type="button" class="btn-close text-reset text-info shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
 
-            <div class="offcanvas-body bg-dark">
-              <h5 class="pb-2 text-success">CODER HOUSE</h5>
+            <div class="offcanvas-body bg-transparent">
+              <h5 class="pb-2 text-info">CODER HOUSE</h5>
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                   <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
@@ -41,20 +48,28 @@
                 </div>
               </ul>
 
-              <div class="tab-content bg-dark" id="nav-tabContent">
+              <div class="tab-content bg-transparent" id="nav-tabContent">
                 <div class="tab-pane pt-4 fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                   <h6 class="px-1">PROYECTOS</h6>
                   <p class="px-1">en construcción...</p>
                   <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action mb-2">
+                    <a href="./oldies/01-entregable.html" class="list-group-item bg-item-glass list-group-item-action active mb-3" aria-current="true">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Desafío complementario #2</h5>
+                        <small class="text-muted">220524</small>
+                      </div>
+                      <p class="mb-1">Incorporae Array</p>
+                      <small class="">Creación de un formulario para la creación de productos</small>
+                    </a>
+                    <a href="./oldies/01-entregable.html" class="list-group-item list-group-item-action bg-item-glass mb-3">
                       <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1">Desafío entregable #1</h5>
                         <small class="text-muted">220524</small>
                       </div>
                       <p class="mb-1">Crear simulador</p>
-                      <small class="text-muted"> En este caso, he reformulado un simulador de propinas.</small>
+                      <small class="">En este caso, he reformulado un simulador de propinas.</small>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                    <a href="./oldies/01-complementario.html" class="list-group-item list-group-item-action bg-item-glass mb-3">
                       <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1 txt">Desafío complementario #1</h5>
                         <small>220515</small>
@@ -62,15 +77,6 @@
                       <p class="mb-1 txt">Loops for y while</p>
                       <small>Crear un algoritmo que repita un bloque de instrucciones.</small>
                     </a>
-
-                    <!-- <a href="#" class="list-group-item list-group-item-action">
-                      <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">List group item heading</h5>
-                        <small class="text-muted">3 days ago</small>
-                      </div>
-                      <p class="mb-1">Some placeholder content in a paragraph.</p>
-                      <small class="text-muted">And some muted small print.</small>
-                    </a> -->
                   </div>
                 </div>
                 <div class="tab-pane pt-4 fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
@@ -89,35 +95,33 @@
     </header>
     <!--<<<< START SECTION HERO -->
 
-    <section class="img-container">
-      <img class="bg-img-position" src="./assets/img/tips.jpg" alt="" />
-      <div class="cover-container showcase col-12 col-sm-9 col-md-10 col-lg-8 callout text-start ps-1">
+    <section class="video-container">
+      <!-- <video class="d-none d-md-flex" src="./assets/vid/planeta.mp4" autoplay loop playsinline muted></video> -->
+      <video class="" src="./assets/vid/planeta.mp4" autoplay loop playsinline muted></video>
+      <div class="cover-container col-12 col-sm-9 col-md-6 col-lg-8 callout text-start ps-1">
         <div class="container m-5 p-4 bg-transparent"></div>
-        <div class="text py-5 my-5">
-          <h2 class="mt-5 text-uppercase text-black">Aprendiendo javascript</h2>
-          <h3 class="my-4 text-uppercase text-black">En Coder House</h3>
-          <p class="txt mt-5 d-inline-flex align-items-center">
+        <div class="text p-5 m-5">
+          <h2 class="mt-5 text-uppercase text-white">Aprendiendo javascript</h2>
+          <h3 class="my-4 text-white">en <span class="text-uppercase text-info">Coder House</span></h3>
+          <aside class="txt mt-5 d-inline-flex align-items-center">
             <i class="fa-brands fa-js fa-xl fa-bounce m-0" style="--fa-animation-iteration-count: 3"></i>
-            <strong class="d-sm-flex text-uppercase text-black fw-bold ps-2">ejemplos-consigna:</strong>
-          </p>
+            <p class="d-sm-inline-flex text-uppercase text-white fw-bold m-0 p-0 ps-2">consigna:</p>
+          </aside>
+          <p class="d-sm-flex text-white m-0">Traslada al proyecto integrador el concepto de objetos, visto en la clase de hoy. A partir de los ejemplos mostrados la primera clase, y en función del tipo de simulador que hayas elegido, deberás:</p>
+          <p class="d-sm-flex text-white m-0 ps-3">1. Incorporar al menos un Array en tu proyecto.</p>
+          <p class="d-sm-flex text-white m-0 ps-3">2. Utilizar algunos de los métodos o propiedades vistos en la clase.</p>
 
-          <p class="d-sm-flex m-0"><small>1. Calcular costo total de productos y/o servicios seleccionados por el usuario.</small></p>
-          <p class="d-sm-flex m-0"><small>2. Calcular pagos en cuotas sobre un monto determinado.</small></p>
-          <p class="d-sm-flex m-0"><small>3. Calcular valor final de un producto seleccionado en función de impuestos y descuentos.</small></p>
-          <p class="d-sm-flex m-0"><small>4. Calcular tiempo de espera promedio en relación a la cantidad de turnos registrados.</small></p>
-          <p class="d-sm-flex m-0"><small>5. Calcular edad promedio de personas registradas.</small></p>
-          <p class="d-sm-flex m-0"><small>6. Calcular nota final de alumnos ingresados.</small></p>
-
-          <button class="btn shadow-none text-white text-uppercase btnAnterior disabled my-5" href="#">Anterior</button>
-          <button class="btn shadow-none btnDesafio text-uppercase bg-warning text-dark border-0 my-5" href="#">Desafío</button>
-          <button class="btn shadow-none text-white text-uppercase btnSiguiente my-5" href="#">Otro</button>
+          <button class="btn-actions disabled btnAnterior my-5" href="./oldies/01-entregable.html">Anterior</button>
+          <button type="button" class="btn-desafio-planet btnDesafio my-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Desafío</button>
+          <!-- <button class="btn-desafio-planet btnDesafio my-5" href="#">Desafío</button> -->
+          <button class="btn-actions btnSiguiente my-5" href="#">Otro</button>
           <div class="text py-5 my-5">
             <ul class="social d-inline-flex p-0">
               <li>
                 <a href="https://github.com/ferjencoder/ferjencoder" target="_blank"><i class="fa-brands fa-github"></i></a>
               </li>
               <li>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/ferjen/"><i class="fa-brands fa-linkedin-in"></i></a>
               </li>
               <li>
                 <a href="https://ferjencoder.github.io/30390_ferjen_code/"><i class="fa-solid fa-globe"></i></a>
@@ -127,16 +131,121 @@
         </div>
       </div>
     </section>
-    <!--<<<< END SECTION HERO -->
-    <footer class="row containerFooterMsg m-0 p-0">
-      <p class="m-0 p-1 text-center text-light">
+
+    <section>
+      <!-- Button trigger modal -->
+      <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Launch demo modal</button> -->
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Productador</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-8">
+                    <div class="row g-2">
+                      <div class="col-6">
+                        <label for="id" class="form-label text-uppercase">Creador de productos</label>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1 ">id:</span>
+                          <input type="text" class="form-control" id="id" placeholder="ej: ecd-mn-90x140-piel-01" aria-label="id" aria-describedby="basic-addon1" />
+                        </div>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1 ">numero producto:</span>
+                          <input type="text" class="form-control" id="numeroProducto" placeholder="01" aria-label="numeroProducto" aria-describedby="basic-addon1" />
+                        </div>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon2">productor:</span>
+                          <input class="form-control" list="productor" placeholder="Seleccione productor..." />
+                          <datalist id="productor">
+                            <option value="ENTRE CORTINAS"></option>
+                            <option value="PROVEEDOR 1"></option>
+                            <option value="PROVEEDOR 2"></option>
+                            <option value="PROVEEDOR 3"></option>
+                            <option value="PROVEEDOR 4"></option>
+                            <option value="PROVEEDOR 5"></option>
+                          </datalist>
+                        </div>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon3">tipo:</span>
+                          <input class="form-control" list="tipo" placeholder="Seleccione tipo..." />
+                          <datalist id="tipo">
+                            <option value="ALMOHADON"></option>
+                            <option value="CORTINA"></option>
+                            <option value="MANTELERIA"></option>
+                            <option value="MANTAS"></option>
+                            <option value="PANTALLAS"></option>
+                            <option value="TOLDOS"></option>
+                          </datalist>
+                        </div>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon4">alto:</span>
+                          <input type="number" class="form-control" id="alto" placeholder="140" aria-label="alto" aria-describedby="basic-addon4" />
+                          <span class="input-group-text" id="basic-addon5">ancho</span>
+                          <input type="number" class="form-control" id="ancho" placeholder="90" aria-label="ancho" aria-describedby="basic-addon5" />
+                        </div>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon6">material:</span>
+                          <input class="form-control" list="material" placeholder="Seleccione material..." />
+                          <datalist id="material">
+                            <option value="Lino rústico"></option>
+                            <option value="Gasa de algodón"></option>
+                            <option value="Satinado"></option>
+                            <option value="Simil Piel"></option>
+                            <option value="Tejido"></option>
+                          </datalist>
+                        </div>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text">descripcion:</span>
+                          <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text">$</span>
+                      <input type="number" class="form-control" id="precio" aria-label="Amount (to the nearest dollar)" />
+                      <span class="input-group-text">.00</span>
+                    </div>
+                      </div>
+                      <div class="col-6">
+                        <label for="thumbnailProducto" class="form-label text-uppercase">Imagen producto</label>
+                        <div class="input-group mb-3">
+                          <img class="img-thumbnail" id="thumbnailProducto" src="./assets/img/productos/ecd-al-rustico-lino-01-558x501.jpg" alt="..." />
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <p id="pText" class="text-black"></p>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" onclick="pushData();"  class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        
+    <footer class="fixed-bottom">
+      <p class="text-center text-light">
         <small
-          >Desafío Entregable #1 || <span class="year">1</span> Jacascript || ferJen <a href="https://github.com/ferjencoder"><ins> ferJen</ins></a></small
+          >Desafío Complementario #2 || <span class="year">1</span> JavaScript || <a href="https://github.com/ferjencoder"><ins> ferJen</ins></a> @CODERHOUSE</small
         >
       </p>
     </footer>
+    <!--<<<< END SECTION HERO -->
+
     <!--<< SCRIPTS -->
     <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script src="./productos.js"></script>
     <script src="./app.js"></script>
+    <!-- <script src="./clases/07-after/jugadores-profe.js"></script>
+    <script src="./clases/07-after/after-profe.js"></script>  -->
+    <!--     <script src="./clases/06-after/main.js"></script>
   </body>
 </html>
