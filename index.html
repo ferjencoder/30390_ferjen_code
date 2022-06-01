@@ -153,14 +153,16 @@
                         <label for="id" class="form-label text-uppercase">Creador de productos</label>
                         <div class="input-group mb-3">
                           <span class="input-group-text" id="basic-addon1 ">id:</span>
-                          <input type="text" class="form-control" id="id" placeholder="ej: ecd-mn-90x140-piel-01" aria-label="id" aria-describedby="basic-addon1" />
+                          <input type="text" class="form-control" id="id" placeholder="Uciel sólo hay que llenar id 😁" aria-label="id" aria-describedby="basic-addon1" />
                         </div>
                         <div class="input-group mb-3">
-                          <span class="input-group-text" id="basic-addon1 ">numero producto:</span>
-                          <input type="text" class="form-control" id="numeroProducto" placeholder="01" aria-label="numeroProducto" aria-describedby="basic-addon1" />
+                          <span class="input-group-text" id="basic-addon2 ">numero producto:</span>
+                          <input type="text" class="form-control" id="numeroProducto" placeholder="01" aria-label="numeroProducto" aria-describedby="basic-addon2" />
+                          <span class="input-group-text" id="basic-addon3 ">codigo tipo:</span>
+                          <input type="text" class="form-control" id="codigoTipo" placeholder="mn" aria-label="numeroProducto" aria-describedby="basic-addon3" />
                         </div>
                         <div class="input-group mb-3">
-                          <span class="input-group-text" id="basic-addon2">productor:</span>
+                          <span class="input-group-text" id="basic-addon4">productor:</span>
                           <input class="form-control" list="productor" placeholder="Seleccione productor..." />
                           <datalist id="productor">
                             <option value="ENTRE CORTINAS"></option>
@@ -172,7 +174,13 @@
                           </datalist>
                         </div>
                         <div class="input-group mb-3">
-                          <span class="input-group-text" id="basic-addon3">tipo:</span>
+                          <span class="input-group-text" id="basic-addon2 ">color1:</span>
+                          <input type="text" class="form-control" id="color1" placeholder="01" aria-label="numeroProducto" aria-describedby="basic-addon2" />
+                          <span class="input-group-text" id="basic-addon3 ">color2:</span>
+                          <input type="text" class="form-control" id="color2" placeholder="mn" aria-label="numeroProducto" aria-describedby="basic-addon3" />
+                        </div>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon5">tipo:</span>
                           <input class="form-control" list="tipo" placeholder="Seleccione tipo..." />
                           <datalist id="tipo">
                             <option value="ALMOHADON"></option>
@@ -184,8 +192,8 @@
                           </datalist>
                         </div>
                         <div class="input-group mb-3">
-                          <span class="input-group-text" id="basic-addon4">alto:</span>
-                          <input type="number" class="form-control" id="alto" placeholder="140" aria-label="alto" aria-describedby="basic-addon4" />
+                          <span class="input-group-text" id="basic-addon6">alto:</span>
+                          <input type="number" class="form-control" id="alto" placeholder="140" aria-label="alto" aria-describedby="basic-addon6" />
                           <span class="input-group-text" id="basic-addon5">ancho</span>
                           <input type="number" class="form-control" id="ancho" placeholder="90" aria-label="ancho" aria-describedby="basic-addon5" />
                         </div>
@@ -218,10 +226,13 @@
                       </div>
                   </div>
                 </div>
+                <div class="col-4">
+                  <p id="pText" class="text-black mt-5 ms-5 ps-5"></p>
+                </div>
               </div>
             </div>
             <div class="modal-footer">
-              <p id="pText" class="text-black"></p>
+              
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
               <button type="button" onclick="pushData();"  class="btn btn-primary">Save changes</button>
             </div>
@@ -244,8 +255,5 @@
     <script src="./assets/js/bootstrap.bundle.js"></script>
     <script src="./productos.js"></script>
     <script src="./app.js"></script>
-    <!-- <script src="./clases/07-after/jugadores-profe.js"></script>
-    <script src="./clases/07-after/after-profe.js"></script>  -->
-    <!--     <script src="./clases/06-after/main.js"></script>
   </body>
 </html>
