@@ -12,7 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap" rel="stylesheet" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/all.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Producuctador || Desafío Complementario #2</title>
   </head>
@@ -40,7 +41,7 @@
                     <i class="tabIcons fa-solid fa-bars-progress fa-2xl p-3"></i>
                   </button>
                   <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
-                    <i class="tabIcons fa-solid fa-address-card fa-2xl p-3"></i>
+                    <i class="tabIcons fa-solid fa-rocket fa-2xl p-3"></i>
                   </button>
                   <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
                     <i class="tabIcons fa-solid fa-comment fa-2xl p-3"></i>
@@ -80,8 +81,15 @@
                   </div>
                 </div>
                 <div class="tab-pane pt-4 fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                  <h6 class="px-1">PERFIL</h6>
-                  <p class="px-1">en construcción...</p>
+                  <h6 class="px-1 text-white">PERFIL</h6>
+                  <p class="px-1 text-white">en construcción...</p>
+                  <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item text-white bg-transparent">
+                      <button class="btn btn-actions passGen"><i class="fa-solid fa-lock fa-xl"></i></button>
+                    </li>
+                    <li class="list-group-item text-white bg-transparent">A second item</li>
+                    <li class="list-group-item text-white bg-transparent">A third item</li>
+                  </ul>
                 </div>
                 <div class="tab-pane pt-4 fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                   <h6 class="px-1">CONTACTO</h6>
@@ -183,12 +191,12 @@
                           <span class="input-group-text" id="basic-addon5">tipo:</span>
                           <input class="form-control" list="tipo" placeholder="Seleccione tipo..." />
                           <datalist id="tipo">
-                            <option value="ALMOHADON"></option>
-                            <option value="CORTINA"></option>
-                            <option value="MANTELERIA"></option>
-                            <option value="MANTAS"></option>
-                            <option value="PANTALLAS"></option>
-                            <option value="TOLDOS"></option>
+                            <option value="ALMOHADON">ALMOHADON</option>
+                            <option value="CORTINA">CORTINA</option>
+                            <option value="MANTELERIA">MANTELERIA</option>
+                            <option value="MANTAS">MANTAS</option>
+                            <option value="PANTALLAS">PANTALLAS</option>
+                            <option value="TOLDOS">TOLDOS</option>
                           </datalist>
                         </div>
                         <div class="input-group mb-3">
@@ -212,36 +220,35 @@
                           <span class="input-group-text">descripcion:</span>
                           <textarea class="form-control" aria-label="With textarea"></textarea>
                         </div>
-                    <div class="input-group mb-3">
-                      <span class="input-group-text">$</span>
-                      <input type="number" class="form-control" id="precio" aria-label="Amount (to the nearest dollar)" />
-                      <span class="input-group-text">.00</span>
-                    </div>
-                      </div>
-                      <div class="col-6">
-                        <label for="thumbnailProducto" class="form-label text-uppercase">Imagen producto</label>
                         <div class="input-group mb-3">
-                          <img class="img-thumbnail" id="thumbnailProducto" src="./assets/img/productos/ecd-al-rustico-lino-01-558x501.jpg" alt="..." />
+                          <span class="input-group-text">$</span>
+                          <input type="number" class="form-control" id="precio" aria-label="Amount (to the nearest dollar)" />
+                          <span class="input-group-text">.00</span>
                         </div>
                       </div>
+                      <div class="col-6">
+                        <label for="imagenProducto" class="form-label text-uppercase">Imagen producto</label>
+                        <div class="input-group mb-3">
+                          <img class="img-thumbnail" id="imagenProducto" src="./assets/img/productos/ecd-al-rustico-lino-01-558x501.jpg" alt="..." />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <p id="pText" class="text-black mt-5 ms-5 ps-5"></p>
                   </div>
                 </div>
-                <div class="col-4">
-                  <p id="pText" class="text-black mt-5 ms-5 ps-5"></p>
-                </div>
               </div>
-            </div>
-            <div class="modal-footer">
-              
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" onclick="pushData();"  class="btn btn-primary">Save changes</button>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" onclick="pushData();" class="btn btn-primary">Save changes</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-        
     <footer class="fixed-bottom">
       <p class="text-center text-light">
         <small
@@ -255,5 +262,6 @@
     <script src="./assets/js/bootstrap.bundle.js"></script>
     <script src="./productos.js"></script>
     <script src="./app.js"></script>
+    <!-- <script src="./challenge.js"></script> -->
   </body>
 </html>

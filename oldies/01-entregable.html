@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="../assets/ico/zanahoria.png" type="image/x-icon" />
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css" />
+    <link rel="shortcut icon" href="../assets/ico/globe.png" sizes="32x32" type="image/x-icon" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="../assets/css/all.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/css/style.css" />
-    <title>Simulador de propinas || Desafío Entregable #1</title>
+    <title>Producuctador || Desafío Complementario #2</title>
   </head>
   <body class="bg-primary">
     <header>
@@ -33,7 +41,7 @@
                     <i class="tabIcons fa-solid fa-bars-progress fa-2xl p-3"></i>
                   </button>
                   <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
-                    <i class="tabIcons fa-solid fa-address-card fa-2xl p-3"></i>
+                    <i class="tabIcons fa-solid fa-rocket fa-2xl p-3"></i>
                   </button>
                   <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
                     <i class="tabIcons fa-solid fa-comment fa-2xl p-3"></i>
@@ -46,15 +54,23 @@
                   <h6 class="px-1">PROYECTOS</h6>
                   <p class="px-1">en construcción...</p>
                   <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action mb-2">
+                    <a href="../index.html" class="list-group-item bg-item-glass list-group-item-action active mb-3" aria-current="true">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Desafío complementario #2</h5>
+                        <small class="text-muted">220524</small>
+                      </div>
+                      <p class="mb-1">Incorporae Array</p>
+                      <small class="">Creación de un formulario para la creación de productos</small>
+                    </a>
+                    <a href="../oldies/01-entregable.html" class="list-group-item list-group-item-action bg-item-glass mb-3">
                       <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1">Desafío entregable #1</h5>
                         <small class="text-muted">220524</small>
                       </div>
                       <p class="mb-1">Crear simulador</p>
-                      <small class="text-muted"> En este caso, he reformulado un simulador de propinas.</small>
+                      <small class="">En este caso, he reformulado un simulador de propinas.</small>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                    <a href="../oldies/01-complementario.html" class="list-group-item list-group-item-action bg-item-glass mb-3">
                       <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1 txt">Desafío complementario #1</h5>
                         <small>220515</small>
@@ -62,15 +78,6 @@
                       <p class="mb-1 txt">Loops for y while</p>
                       <small>Crear un algoritmo que repita un bloque de instrucciones.</small>
                     </a>
-
-                    <!-- <a href="#" class="list-group-item list-group-item-action">
-                      <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">List group item heading</h5>
-                        <small class="text-muted">3 days ago</small>
-                      </div>
-                      <p class="mb-1">Some placeholder content in a paragraph.</p>
-                      <small class="text-muted">And some muted small print.</small>
-                    </a> -->
                   </div>
                 </div>
                 <div class="tab-pane pt-4 fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
@@ -109,7 +116,7 @@
           <p class="d-sm-flex text-white m-0"><small>5. Calcular edad promedio de personas registradas.</small></p>
           <p class="d-sm-flex text-white m-0"><small>6. Calcular nota final de alumnos ingresados.</small></p>
 
-          <button class="btn shadow-none text-light text-uppercase btnAnterior my-5" href="./01-complementario.html">Anterior</button>
+          <button class="btn shadow-none text-light text-uppercase btnAnterior my-5" href="../01-complementario.html">Anterior</button>
           <button class="btn shadow-none btnDesafio text-uppercase bg-warning text-dark border-0 my-5" href="#">Desafío</button>
           <button class="btn shadow-none text-light text-uppercase btnSiguiente my-5" href="#">Otro</button>
           <div class="text py-5 my-5">
