@@ -1,5 +1,4 @@
 @use '../custom' as *;
-@use '../components/colors' as *;
 @use '../components/typography' as *;
 
 // .btn {
@@ -29,6 +28,7 @@
   font-family: $planet-ff-secondary;
   font-weight: 400;
   letter-spacing: $planet-fs-spacing-sm;
+
   &:hover {
     color: $planet-clr-2;
     border: 1px solid $planet-clr-2;
