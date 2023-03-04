@@ -44,7 +44,7 @@ document.querySelector('.btnSiguiente').addEventListener('click', function () {
   // const inputWebSite = prompt('Ingrese el sitio para el que desea generar una contraseña.');
   const inputLength = prompt('Para contraseñas seguras se recomienda que tengan entre 8 y 12 caracteres.\nCuantos caracteres desea que tenga la contraseña?');
   // const inputSymbols = prompt('Ingrese 4 symbolos para mayor seguridad.\nPuede elegir entre ! # + *.');
-  const passChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!+*-!+*-!+*-!+*-!+*-!+*-!+*-!+*-!+*-012345678901234567890123456789';
+  const passChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijkLmnpqrstuvwxyz!+*-!+*-!+*-!+*-!+*-!+*-!+*-!+*-!+*-12345678901234567890123456789';
   let passGen = '';
 
   for (let i = 0; i <= inputLength; i++) {
