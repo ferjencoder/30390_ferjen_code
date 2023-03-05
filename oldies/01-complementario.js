@@ -49,11 +49,12 @@ const messageCopied = document.getElementById('messageCopied');
 document.getElementById('btnCopy').addEventListener('click', function () {
 
   navigator.clipboard.writeText(codeTxt.textContent);
-  messageCopied.textContent = "copied to clipboard!";
+  messageCopied.classList.remove('opacity-0');
   // console.log(codeTxt.textContent);
 });
 
 document.getElementById('btnNew').addEventListener('click', function () {
+  messageCopied.classList.add('opacity-0');
   let passGen = '';
   codeTxt.textContent = "";
 
