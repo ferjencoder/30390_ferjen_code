@@ -4,6 +4,73 @@
 
 // $planet-clr-bg:
 
+$clr-black: #0d0b14;
+$clr-primary: #635bff;
+$clr-secondary: #6c757d;
+$clr-success: #79ff68;
+$clr-info: #65ceff;
+$clr-warning: #e5b65a;
+$clr-danger: #e45b5d;
+$clr-dark: #212529;
+$clr-light: #f1f1f1;
+$clr-shadow-dark: #1a1a1a;
+$clr-shadow-light: #222222;
+$clr-bg: #222222;
+
+html {
+  --s: 50px;
+  /* control the size */
+  --c1: #171717;
+  --c2: #0d0b14;
+
+
+  --_g:
+    var(--c2) 6% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%, var(--c1) 36% 44%,
+    var(--c2) 46% 54%, var(--c1) 56% 64%, var(--c2) 66% 74%, var(--c1) 76% 84%, var(--c2) 86% 94%;
+  background:
+    radial-gradient(100% 100% at 100% 0, var(--c1) 4%, var(--_g), #0008 96%, #0000),
+    radial-gradient(100% 100% at 0 100%, #0000, #0008 4%, var(--_g), var(--c1) 96%) var(--c1);
+  background-size: var(--s) var(--s);
+}
+
+a,
+li {
+  list-style: none;
+}
+
+#inputLength {
+  color: $clr-black;
+  background-color: $clr-danger;
+  font-family: 'Anton', sans-serif;
+  border: 0;
+  text-align: center;
+  justify-content: center;
+}
+
+#inputLength::placeholder {
+  color: $clr-black;
+}
+
+#inputLength:active::placeholder {
+  color: $clr-dark;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.input-group {
+  gap: 1rem;
+}
+
+#codeTxt {
+  font-family: Segoe UI, sans-serif;
+}
+
 $planet-clr-1: #242424;
 $planet-clr-2: rgb(229, 248, 118);
 $planet-clr-3: rgb(255, 215, 0);
@@ -32,9 +99,9 @@ $gray-900: #212529;
 $white: #fff;
 
 // FONTS PLANET
-$planet-ff-primary: 'Barlow', sans-serif;
+$planet-ff-primary: 'Anton', sans-serif;
 $planet-ff-secondary: Segoe UI, sans-serif;
-$planet-ff-serif: 'Bellefair', serif;
+$planet-ff-serif: 'Anton', sans-serif;
 
 /* OVERRIDES FONTS */
 $font-family-sans-serif: $planet-ff-primary;
@@ -104,6 +171,27 @@ $list-group-action-active-bg: $gray-200;
 .form-control {
   border: 0;
   /*   border-bottom: 1px solid $coffee-clr-2; */
+}
+
+.section-container__code {
+  background-color: $clr-black;
+  padding: 2rem 5rem;
+  border-radius: 1rem;
+  box-shadow: 1px 0px 69px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 0px 69px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 0px 69px 0px rgba(0, 0, 0, 0.75);
+}
+
+.navbar-dark {
+  background-color: $clr-black;
+  box-shadow: 1px 0px 69px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 0px 69px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 0px 69px 0px rgba(0, 0, 0, 0.75);
+}
+
+h3 {
+  letter-spacing: 0.07em;
+  color: $clr-info
 }
 
 //<<<IMPORT BOOTSTRAP 5

@@ -35,7 +35,26 @@
   }
 }
 
+.btn-actions__new {
+  background-color: $clr-warning;
+  border-radius: 0;
+  letter-spacing: 0.07em;
+}
+
+.btn-actions__copy {
+  background-color: $clr-success;
+  border-radius: 0;
+  letter-spacing: 0.07em;
+}
+
 .btn-desafio-planet {
   @extend .btn-actions;
   border: 1px solid white;
+}
+
+.icon-social__i {
+  width: 2.5rem;
+  height: 2.5rem;
+  letter-spacing: 0.07em;
+
 }

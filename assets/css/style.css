@@ -1,9 +1,80 @@
 @charset "UTF-8";
+html {
+  --s: 50px;
+  /* control the size */
+  --c1: #171717;
+  --c2: #0d0b14;
+  --_g:
+    var(--c2) 6% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%, var(--c1) 36% 44%,
+    var(--c2) 46% 54%, var(--c1) 56% 64%, var(--c2) 66% 74%, var(--c1) 76% 84%, var(--c2) 86% 94%;
+  background: radial-gradient(100% 100% at 100% 0, var(--c1) 4%, var(--_g), rgba(0, 0, 0, 0.5333333333) 96%, rgba(0, 0, 0, 0)), radial-gradient(100% 100% at 0 100%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5333333333) 4%, var(--_g), var(--c1) 96%) var(--c1);
+  background-size: var(--s) var(--s);
+}
+
+a,
+li {
+  list-style: none;
+}
+
+#inputLength {
+  color: #0d0b14;
+  background-color: #e45b5d;
+  font-family: "Anton", sans-serif;
+  border: 0;
+  text-align: center;
+  justify-content: center;
+}
+
+#inputLength::placeholder {
+  color: #0d0b14;
+}
+
+#inputLength:active::placeholder {
+  color: #212529;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.input-group {
+  gap: 1rem;
+}
+
+#codeTxt {
+  font-family: Segoe UI, sans-serif;
+}
+
 /* OVERRIDES FONTS */
 /* $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") ; */
 .form-control {
   border: 0;
   /*   border-bottom: 1px solid $coffee-clr-2; */
+}
+
+.section-container__code {
+  background-color: #0d0b14;
+  padding: 2rem 5rem;
+  border-radius: 1rem;
+  box-shadow: 1px 0px 69px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 0px 69px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 0px 69px 0px rgba(0, 0, 0, 0.75);
+}
+
+.navbar-dark {
+  background-color: #0d0b14;
+  box-shadow: 1px 0px 69px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 0px 69px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 0px 69px 0px rgba(0, 0, 0, 0.75);
+}
+
+h3, .h3 {
+  letter-spacing: 0.07em;
+  color: #65ceff;
 }
 
 /*!
@@ -80,7 +151,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 0, 0, 0;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Barlow", sans-serif;
+  --bs-font-sans-serif: "Anton", sans-serif;
   --bs-font-monospace: Segoe UI, sans-serif;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -11635,8 +11706,26 @@ textarea.form-control-lg {
   border: 1px solid rgb(229, 248, 118);
 }
 
+.btn-actions__new {
+  background-color: #e5b65a;
+  border-radius: 0;
+  letter-spacing: 0.07em;
+}
+
+.btn-actions__copy {
+  background-color: #79ff68;
+  border-radius: 0;
+  letter-spacing: 0.07em;
+}
+
 .btn-desafio-planet {
   border: 1px solid white;
+}
+
+.icon-social__i {
+  width: 2.5rem;
+  height: 2.5rem;
+  letter-spacing: 0.07em;
 }
 
 /* MEDIA QUERIES */

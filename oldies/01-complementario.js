@@ -40,34 +40,34 @@
 
 //<<< PASS GEN
 
-const codeTxt = document.getElementById('codeTxt');
-const inputLength = document.getElementById('inputLength').value || 15;
+const codeTxt = document.getElementById( 'codeTxt' );
+const inputLength = document.getElementById( 'inputLength' ).value || 55;
 const passChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijkLmnpqrstuvwxyz!+*-!+*-!+*-!+*-!+*-!+*-!+*-!+*-!+*-12345678901234567890123456789';
-const btnCopy = document.getElementById('btnCopy');
-const messageCopied = document.getElementById('messageCopied');
+const btnCopy = document.getElementById( 'btnCopy' );
+const messageCopied = document.getElementById( 'messageCopied' );
 
-document.getElementById('btnCopy').addEventListener('click', function () {
+document.getElementById( 'btnCopy' ).addEventListener( 'click', function () {
 
-  navigator.clipboard.writeText(codeTxt.textContent);
-  messageCopied.classList.remove('opacity-0');
+  navigator.clipboard.writeText( codeTxt.textContent );
+  messageCopied.classList.remove( 'opacity-0' );
   // console.log(codeTxt.textContent);
-});
+} );
 
-document.getElementById('btnNew').addEventListener('click', function () {
-  messageCopied.classList.add('opacity-0');
+document.getElementById( 'btnNew' ).addEventListener( 'click', function () {
+  messageCopied.classList.add( 'opacity-0' );
   let passGen = '';
   codeTxt.textContent = "";
 
-  for (let i = 0; i <= inputLength; i++) {
-    if (!inputLength && !inputLength.value) {
+  for ( let i = 0; i <= inputLength; i++ ) {
+    if ( !inputLength && !inputLength.value ) {
       // cancel btn
     } else {
-      passGen += passChars.charAt(Math.floor(Math.random() * passChars.length));
+      passGen += passChars.charAt( Math.floor( Math.random() * passChars.length ) );
     }
   }
 
   codeTxt.textContent = passGen
-});
+} );
 
 
 
