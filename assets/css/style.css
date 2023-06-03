@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* OVERRIDES FONTS */
+/* $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") ; */
 html {
   --s: 50px;
   /* control the size */
@@ -49,8 +51,6 @@ li {
   font-family: Segoe UI, sans-serif;
 }
 
-/* OVERRIDES FONTS */
-/* $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") ; */
 .form-control {
   border: 0;
   /*   border-bottom: 1px solid $coffee-clr-2; */
