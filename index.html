@@ -14,13 +14,10 @@
     href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
     rel="stylesheet" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css" />
 
   <link rel="stylesheet" href="../assets/css/style.css" />
   <title>Code Maker</title>
@@ -28,23 +25,23 @@
 
 <body class="bg-primary">
   <header>
-    <nav class="navbar navbar-dark bg-transparent fixed-top px-5 mx-3">
+    <nav class="navbar navbar-dark fixed-top">
       <div class="container-fluid py-1">
         <a class="navbar-brand text-white" href="#">
-          <h3 class="d-none d-sm-flex fw-bold">CODE MAKER</h3>
+          <h3 class="d-sm-flex fw-bold p-0 m-0 text-danger ps-3">CODE MAKER</h3>
         </a>
         <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header bg-dark text-white">
+          <div class="offcanvas-header bg-dark-b text-white">
             <h3 class="offcanvas-title" id="offcanvasNavbarLabel">CODE MAKER</h3>
             <button type="button" class="btn-close text-light text-reset shadow-none" data-bs-dismiss="offcanvas"
               aria-label="Close"></button>
           </div>
 
-          <div class="offcanvas-body bg-dark">
+          <div class="offcanvas-body bg-dark-b">
             <h5 class="pb-2 text-success">CODER HOUSE</h5>
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -63,7 +60,7 @@
               </div>
             </ul>
 
-            <div class="tab-content bg-dark" id="nav-tabContent">
+            <div class="tab-content bg-dark-b" id="nav-tabContent">
               <div class="tab-pane pt-4 fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <h6 class="px-1">PROYECTOS</h6>
                 <p class="px-1">en construcción...</p>
@@ -111,42 +108,51 @@
       </div>
     </nav>
   </header>
-  <!--<<<< START SECTION HERO -->
 
-  <section class="position-absolute top-50 start-50 translate-middle text-white">
-    <div class="container-fluid bg-transparent d-flex mt-5">
-      <div class="mt-5 d-flex flex-column justify-content-center">
-        <h2 class="my-5 text-uppercase text-center">Code Maker</h2>
+  <section class="section-container__code text-white">
+    <img class="section-container__code-img" src="../assets/img/waves/Wave-10s-1980px-top-violet.svg" alt="">
+    <div class="section-container__code-code container-fluid bg-transparent d-flex">
+      <div class="section-container__code-text">
+        <!-- <h2 class="my-5 text-uppercase text-center">Code Maker</h2> -->
         <span id="codeTxt" class="h4 mx-4 p-0 text-center">72h186d1PH-5h-Xa</span>
         <div class="mt-5 input-group justify-content-center">
-          <input type="text" id="inputLength" class="form-control" placeholder="15" aria-label="Recipient's username"
-            aria-describedby="button-addon2">
-          <button id="btnNew" class="btn btn-outline-secondary" type="button" id="button-addon2">New</button>
-          <button id="btnCopy" class="btn btn-outline-secondary" type="button" id="button-addon2">Copy</button>
+
+          <input type="text" id="inputLength" class="form-control btn-actions" placeholder="15" aria-label="Code length"
+            aria-describedby="button-addon2" onfocus="removePlaceholder()" onblur="restorePlaceholder()">
+
+          <button id="btnNew" class="btn btn-actions__new" type="button" id="button-addon2">NEW</button>
+          <button id="btnCopy" class="btn btn-actions__copy" type="button" id="button-addon2">COPY</button>
         </div>
-        <h6 id="messageCopied" class="text-center mt-1 opacity-0">Copied to clipboard</h6>
-        <div class="text py-5 my-5 d-flex justify-content-center">
-          <!-- <div class="text py-5 my-5"> -->
+        <h6 id="messageCopied" class="text-center mt-1 opacity-0">Copied to clipboard!</h6>
+        <div class="text py-5 d-flex justify-content-center">
+
           <ul class="social d-inline-flex p-0">
             <li>
               <a href="https://github.com/ferjencoder/ferjencoder" target="_blank">
-                <i class="fa-brands fa-github"></i></a>
+                <i class="fa-brands fa-github fa-bounce icon-social__i fa-xl text-danger"
+                  style="--fa-animation-duration: 0.5s; --fa-animation-iteration-count: 5"></i>
+              </a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/ferjen/" target="_blank">
-                <i class="fa-brands fa-linkedin-in"></i></a>
+                <i class="fa-brands fa-linkedin fa-bounce icon-social__i fa-xl text-info"
+                  style="--fa-animation-duration: 0.6s; --fa-animation-iteration-count: 5"></i>
+              </a>
             </li>
             <li>
               <a href="https://ferjencoder.github.io/30390_ferjen_code/" target="_blank">
-                <i class="fa-solid fa-globe"></i></a>
+                <i class="fa-solid fa-earth-americas fa-bounce icon-social__i fa-xl text-warning"
+                  style="--fa-animation-duration: 0.7s; --fa-animation-iteration-count: 5"></i>
+              </a>
             </li>
           </ul>
+
         </div>
-        <!-- </div> -->
       </div>
+    </div>
+    <img class="section-container__code-img--b" src="../assets/img/waves/Wave-10s-1980px-bottom-up.svg" alt="">
   </section>
-  <!--<<<< END SECTION HERO -->
-  <!--<< SCRIPTS -->
+
   <script src="../assets/js/bootstrap.bundle.js"></script>
   <script src="../oldies/01-complementario.js"></script>
 </body>

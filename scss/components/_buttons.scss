@@ -41,10 +41,20 @@
   letter-spacing: 0.07em;
 }
 
+.btn-actions__new:hover {
+  background-color: #ffaa00;
+  color: $clr-black;
+}
+
 .btn-actions__copy {
   background-color: $clr-success;
   border-radius: 0;
   letter-spacing: 0.07em;
+}
+
+.btn-actions__copy:hover {
+  background-color: #1eff00;
+  color: $clr-black
 }
 
 .btn-desafio-planet {
